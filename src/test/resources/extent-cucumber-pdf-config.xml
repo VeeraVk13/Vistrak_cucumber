@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extent-config>
+    <extent-pdf-config>
+        <documentTitle>Extent Cucumber PDF Report</documentTitle>
+        <displayOrder>NEWEST_FIRST</displayOrder>
+    </extent-pdf-config>
+</extent-config>

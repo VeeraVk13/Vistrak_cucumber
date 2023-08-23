@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>dark</theme>
+
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+
+        <!-- enable or disable timeline on dashboard -->
+        <enableTimeline>true</enableTimeline>
+
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>https</protocol>
+
+        <!-- title of the document -->
+        <documentTitle>Vistrak Data Driven Testing</documentTitle>
+
+        <!-- report name - displayed at top-nav -->
+        <reportName> Vistrak Testing</reportName>
+
+        <!-- create a report with all artifacts stored locally -->
+        <enableOfflineMode>true</enableOfflineMode>
+
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    var now = new Date();
+                    var formattedDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate();
+                    var formattedTime = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                    var dateTime = formattedDate + ' ' + formattedTime;
+
+                    // Set the report name to include the date and time
+                    $('reportName').text('Micronot Testing - ' + dateTime);
+                });
+            ]]>
+        </scripts>
+
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+
+            ]]>
+        </styles>
+
+        <!-- custom date format -->
+        <dateFormat>yyyy-MM-dd</dateFormat>
+    </configuration>
+</extentreports>
+
