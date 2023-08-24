@@ -8,6 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.Utitles.CommonUtils;
 import com.Utitles.Drivermanger;
 import com.Utitles.Globalvariables;
 
@@ -27,10 +28,11 @@ public class common_steps implements Globalvariables {
 		try {
 			if (Drivermanger.getDriver() == null) {
 				Drivermanger.launchBrowser(Browser);
+			
 
 			}
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 		}
 
 	}
@@ -38,7 +40,6 @@ public class common_steps implements Globalvariables {
 	@After
 	public void afterScenario() {
 		Drivermanger.getDriver().close();
-
 	}
 
 	@AfterStep
@@ -47,12 +48,6 @@ public class common_steps implements Globalvariables {
 			final byte[] screenshot = ((TakesScreenshot) Drivermanger.getDriver()).getScreenshotAs(OutputType.BYTES);
 			scenario.attach(screenshot, "image/png", "errorscreen");
 		}
-
-	}
-
-	@BeforeAll
-	public void name() {
-		
 
 	}
 

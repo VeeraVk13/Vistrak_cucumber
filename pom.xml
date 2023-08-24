@@ -76,6 +76,29 @@
 			<version>2.13.0</version>
 		</dependency>
 
+		<!--
+		https://mvnrepository.com/artifact/tech.grasshopper/extent-pdf-report -->
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extent-pdf-report</artifactId>
+			<version>2.12.0</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/com.github.stephenc.monte/monte-screen-recorder -->
+		<dependency>
+			<groupId>com.github.stephenc.monte</groupId>
+			<artifactId>monte-screen-recorder</artifactId>
+			<version>0.7.7.0</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/com.github.stephenc.monte/monte-screen-recorder -->
+		<dependency>
+			<groupId>com.github.stephenc.monte</groupId>
+			<artifactId>monte-screen-recorder</artifactId>
+			<version>0.7.7.0</version>
+		</dependency>
+
 
 	</dependencies>
 
@@ -90,15 +113,11 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.1.2</version>
+				<version>3.0.0-M5</version>
 			</plugin>
-
-
 		</plugins>
 	</build>
 </project>
