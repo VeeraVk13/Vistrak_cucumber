@@ -13,4 +13,16 @@ public interface Globalvariables {
 	
 	int EXPLICIT_WAIT = Integer.valueOf(CommonUtils.getProperty("explicitWait")); // 15;
     int IMPLICIT_WAIT = Integer.valueOf(CommonUtils.getProperty("implicitWait")); // 5;
+
+	String testoutput= CommonUtils.getProperty("test-output");
+
+	String Logs = CommonUtils.getProperty("Logs");
+
+	String Report = CommonUtils.getProperty("Report");
+
+	String FailedScenarios = CommonUtils.getProperty("FailedScenarios");
+
+	String aviDirPath = CommonUtils.getProperty("aviDirPath");
+
+
 }
