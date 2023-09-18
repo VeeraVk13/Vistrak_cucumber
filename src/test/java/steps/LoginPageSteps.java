@@ -10,7 +10,6 @@ public class LoginPageSteps {
 
 	public LoginPageSteps(WebDriver driver) {
 		this.loginPage = new LoginPage(driver);
-
 	}
 
 	public void Enter_the_Login_details(String Mobile, String Pin) throws InterruptedException {
