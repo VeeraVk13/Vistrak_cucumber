@@ -1,2 +1,2 @@
-cd C:\Users\admin\IdeaProjects\Vistrak_cucumber
+cd /var/jenkins/workspace/Vistrack-dev
 docker-compose -f docker-compose-v3.yml up
